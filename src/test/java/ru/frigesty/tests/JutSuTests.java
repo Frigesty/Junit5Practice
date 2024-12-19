@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 @Tag("simple")
-@Disabled
+@Disabled("Перестал грузиться в рф")
 @DisplayName("Тесты на сайт https://jut.su/")
 public class JutSuTests extends TestBase {
 
