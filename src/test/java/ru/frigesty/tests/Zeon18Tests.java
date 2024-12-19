@@ -11,6 +11,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+@Tag("simple")
 @DisplayName("Тесты на сайт https://zeon18.ru/")
 public class Zeon18Tests extends TestBase {
 

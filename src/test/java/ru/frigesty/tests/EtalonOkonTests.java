@@ -9,6 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
+@Tag("simple")
 @DisplayName("Тесты на сайт etalonokon.ru")
 public class EtalonOkonTests extends TestBase {
 

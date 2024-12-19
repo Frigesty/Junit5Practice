@@ -15,6 +15,7 @@ import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
+@Tag("simple")
 @DisplayName("Тесты на сайт https://myshows.me/")
 public class MyShowsTests extends TestBase {
 
