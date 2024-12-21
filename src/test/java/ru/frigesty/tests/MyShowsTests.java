@@ -24,7 +24,7 @@ public class MyShowsTests extends TestBase {
         open("https://myshows.me/");
     }
 
-    static Stream<Arguments> siteShouldContainAllButtonsAfterLanguageSelection() {
+    static Stream<Arguments> siteShouldContainAllButtonsAfterLanguageSelectionTest() {
         return Stream.of(
                 Arguments.of(Locale.UA, List.of("Серіали", "Фільми", "Новини", "Добірки", "Рейтинги")),
                 Arguments.of(Locale.RU, List.of("Сериалы", "Фильмы", "Новости", "Подборки", "Рейтинги")),
@@ -38,7 +38,7 @@ public class MyShowsTests extends TestBase {
         @Tag("Language"),
         @Tag("Buttons")
     })
-    void siteShouldContainAllButtonsAfterLanguageSelection(Locale locale, List<String> buttons) {
+    void siteShouldContainAllButtonsAfterLanguageSelectionTest(Locale locale, List<String> buttons) {
         $(".LangSwitcher").click();
         $$(".LangSwitcher-options .LangSwitcher-optionText").find(text(locale.name())).click();
         $$(".HeaderMenu .HeaderMenu__item").shouldHave(texts(buttons));

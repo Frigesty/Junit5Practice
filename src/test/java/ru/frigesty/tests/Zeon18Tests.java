@@ -23,7 +23,7 @@ public class Zeon18Tests extends TestBase {
     @CsvFileSource(resources = "/categorySearchZeon.csv")
     @ParameterizedTest(name = "Для поискового запроса {0} слева отображается категория {1} на странице с результатом поиска")
     @Tag("Search")
-    void afterASearchQueryTheDesiredCategoryIsDisplayedOnTheLeft(String productName, String categoryName){
+    void afterASearchQueryTheDesiredCategoryIsDisplayedOnTheLeftTest(String productName, String categoryName){
         $(".input.style-big").setValue(productName).pressEnter();
         $(".catalog-filter-categories-list").shouldBe(visible).shouldHave(text(categoryName)) ;
     }

@@ -32,7 +32,7 @@ public class JutSuTests extends TestBase {
     })
     @ParameterizedTest(name = "При нажатии на кнопку {0} в header мы попадаем на страницу с надписью {1}")
     @Tag("Buttons")
-    public void whenYouClickTheButtonInTheHeaderYouShouldGoToTheDesiredPage(String link, String header){
+    public void whenYouClickTheButtonInTheHeaderYouShouldGoToTheDesiredPageTest(String link, String header){
         $(".top_nav_b ul").$(byText(link)).click();
         $(".content h1").shouldHave(text(header));
     }

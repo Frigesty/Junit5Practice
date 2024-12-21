@@ -28,7 +28,7 @@ public class EtalonOkonTests extends TestBase {
     )
     @Tag("Buttons")
     @ParameterizedTest(name = "При наведении курсора на кнопку в header {0} выпадает меню")
-    void WhenYouHoverOverTheHeaderButtonAMenuDropsDown(String value) {
+    void whenYouHoverOverTheHeaderButtonAMenuDropsDownTest(String value) {
         $$(".menu .menu-item").findBy(text(value)).hover();
         $$(".menu .menu-item").findBy(text(value)).$(".menu-submenu").shouldBe(visible);
     }
